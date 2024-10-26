@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delicious bakery shop offering fresh baked goods.">
+    <title>Bakery Shop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Bakery Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="banner">
+        <img src="https://img.freepik.com/free-vector/hand-drawn-bakery-facebook-cover-design-template_23-2149385983.jpg?t=st=1729973824~exp=1729977424~hmac=3b26815dab69f460a4c1b4abd0d2ed862fab1ae0fdb916e7524fe0a339846003&w=1380" alt="Bakery Banner" class="img-fluid">
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h1>Welcome to Our Bakery!</h1>
+            <p>We specialize in fresh, delicious baked goods made with love.</p>
+        </div>
+    </section>
+
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" onclick="logClick('Product 1 clicked')">
+                        <img src="https://img.freepik.com/free-photo/close-up-chocolate-cake_23-2148604534.jpg?t=st=1729974137~exp=1729977737~hmac=5d05bf5ba599c6fb4294a3b2bb27f24bdd8d82b2ac9877815e5d94c93f898a4b&w=996" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Cake</h5>
+                            <p class="card-text">₹499</p> <!-- Updated currency -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" onclick="logClick('Product 2 clicked')">
+                        <img src="https://img.freepik.com/free-photo/cupcake-served-plate_1163-2877.jpg?t=st=1729974359~exp=1729977959~hmac=63117eb123bf0c2ba9d7fad391d3fd63f288ec9c2d780c791f70b15df43a70c2&w=996" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Vanilla Cupcake</h5>
+                            <p class="card-text">₹199</p> <!-- Updated currency -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" onclick="logClick('Product 3 clicked')">
+                        <img src="https://img.freepik.com/free-photo/close-up-melted-cheese-sandwich_23-2149286863.jpg?t=st=1729974294~exp=1729977894~hmac=3b487ab023f82863736358de89a431d4112c07d8e1d904f0d982f64ce642849a&w=996" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Cheese Bread</h5>
+                            <p class="card-text">₹149</p> <!-- Updated currency -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Bakery Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
